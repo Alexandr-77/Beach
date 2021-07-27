@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travels</title>
+    <meta name="description" content="Начав путешествовать однажды, остановиться уже невозможно. Это не только приключения и расширение кругозора – путешествия меняют жизнь к лучшему. Быть может, однажды какая-нибудь страна настолько вам понравится, что вы смените место жительства – даже такой большой и серьезный шаг начинается с путешествий.">
+    <meta name="robots" content="index, follow">
+    <!-- open graf -->
+    <meta property="og:title" content="Travels" />
+    <meta property="og:description " content="Начав путешествовать однажды, остановиться уже невозможно. Это не только приключения и расширение кругозора – путешествия меняют жизнь к лучшему. Быть может, однажды какая-нибудь страна настолько вам понравится, что вы смените место жительства – даже такой большой и серьезный шаг начинается с путешествий." />
+    <meta property="og:image " content="./img/header/Background.jpg" />
+    <meta property="og:image " content="https://thumbs.dreamstime.com/z/%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5-%D1%87%D0%B0%D1%81%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D0%BF%D0%BE%D1%8F%D1%81%D0%B0-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D0%BF%D1%80%D0%B8%D0%BD%D1%86%D0%B8%D0%BF%D0%B8%D0%B0-%D1%8C%D0%BD%D0%BE%D0%B9-%D1%81%D1%85%D0%B5%D0%BC%D1%8B-%D1%87%D0%B0%D1%81%D0%BE%D0%B2-%D0%B5-%D0%B0-85089873.jpg" />
+    <!-- open graf /-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Mulish:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon/avio.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -46,17 +55,17 @@
                         <li class="menu-item"><a href="#">Trips</a></li>
                         <li class="menu-item menu-item-btn"><a href="#">Sign in</a></li>
                     </ul>
-                    <button class="burger__block">
-                        <div class="burger"></div>
-                    </button>
+                    <a href="#" class="burger__block" id="burgerBlocl">
+                        <div class="burger" id="burger"><span></span></div>
+                    </a>
                 </div>
             </div>
 
-            <main class="main">
+            <section class="main">
                 <h1>The Greatest<br>Way to The Beach</h1>
                 <p>Bring daydreams of sun-kissed skin and salty hair to reality</p>
                 <a href="#">Book now</a>
-            </main>
+            </section>
 
             <section class="registration">
                 <div class="registration-form">
@@ -239,19 +248,99 @@
 
             <div class="holiday-image">
                 <div class="holiday-image__item holiday-active">
-                    <img src="./img/holiday/holiday-1.jpg" alt="">
+                    <img src="./img/holiday/holiday-1.jpg" alt="holiday">
                     <h3>Cities for beach lovers</h3>
                 </div>
                 <div class="holiday-image__item ">
-                    <img src="./img/holiday/holiday-2.jpg" alt="">
+                    <img src="./img/holiday/holiday-2.jpg" alt="holiday">
                     <h3>Cities for camping 
                         activities</h3>
                 </div>
                 <div class="holiday-image__item">
-                    <img src="./img/holiday/holiday-3.jpg" alt="">
+                    <img src="./img/holiday/holiday-3.jpg" alt="holiday">
                     <h3>Cities for foodies</h3>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="trips">
+        <h2>Trips made easier for everyone, everywhere</h2>
+        <div class="container">
+            <div class="trips-block">
+
+                <div class="trips-card">
+                    <div class="trips-card__img">
+                        <img src="./img/trips/trips-1.svg" alt="trips">
+                    </div>
+                    <div class="trips-card__text">
+                        <h3>Book and relax</h3>
+                        <p>Flexible options let you spend more time 
+                            making plans and less time worrying when 
+                            things change.</p>
+                    </div>
+                </div>
+
+                <div class="trips-card">
+                    <div class="trips-card__img">
+                        <img src="./img/trips/trips-2.svg" alt="trips">
+                    </div>
+                    <div class="trips-card__text">
+                        <h3>Travel smart checklist</h3>
+                        <p>Ready for your next great vacation? use this 
+                            cheatsheet to ensure you’ve covered the 
+                            esentials.</p>
+                    </div>
+                </div>
+
+                <div class="trips-card">
+                    <div class="trips-card__img">
+                        <img src="./img/trips/trips-3.svg" alt="trips">
+                    </div>
+                    <div class="trips-card__text">
+                        <h3>Point hack your trip</h3>
+                        <p>Earn Expedia Rewards points on top of any 
+                            credit card or airline program points when 
+                            you book.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="future">
+        <div class="container">
+            <h2>Ideas for your future trips</h2>
+            <div class="future-wrapper">
+                <div class="future-block">
+
+                    <div class="future__item future__item-1">
+                        <img src="./img/future/future-1.jpg" alt="img">
+                    </div>
+
+                    <div class="future__item future__item-2">
+                        <img src="./img/future/future-2.jpg" alt="img">
+                    </div>
+
+                    <div class="future__item future__item-3">
+                        <img src="./img/future/future-3.jpg" alt="img">
+                    </div>
+
+                    <div class="future__item future__item-4">
+                        <img src="./img/future/future-4.jpg" alt="img">
+                    </div>
+
+                    <div class="future__item future__item-5">
+                        <img src="./img/future/future-5.jpg" alt="img">
+                    </div>
+
+                    <div class="future__item future__item-6">
+                        <img src="./img/future/future-6.jpg" alt="img">
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>

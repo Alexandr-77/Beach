@@ -27,3 +27,13 @@ function mifunction() {
        content.style.display = 'block';
    }
 } 
+
+// ==================================================
+// Добавление и удаление класса 
+
+const burgerBlock = document.querySelector('#burgerBlocl');
+const burger = document.querySelector('#burger');
+
+burgerBlock.addEventListener('click', () => {
+    burger.classList.toggle('burger-active');
+})
